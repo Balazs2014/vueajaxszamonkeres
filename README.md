@@ -1,4 +1,4 @@
-# [Név]
+# Takács Balázs Levente
 
 ## Hogyan kezdj neki?
 
