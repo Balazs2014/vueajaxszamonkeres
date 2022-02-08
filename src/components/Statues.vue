@@ -22,13 +22,13 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="text" v-model="statue.person">
+                        <input type="text" v-model="statue.person" class="form-control">
                     </td>
                     <td>
-                        <input type="number" v-model="statue.height">
+                        <input type="number" v-model="statue.height" class="form-control">
                     </td>
                     <td>
-                        <input type="number" v-model="statue.price">
+                        <input type="number" v-model="statue.price" class="form-control">
                     </td>
                     <td>
                         <button v-if="newData" @click="newStatue" class="btn btn-light">Mentés</button>
