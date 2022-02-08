@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>Statues</h1>
-        <table>
+        <table class="table table-success table-striped">
             <thead>
                 <tr>
                     <th>Személy</th>
@@ -16,8 +16,8 @@
                     <td>{{ statue.height }}</td>
                     <td>{{ statue.price }}</td>
                     <td>
-                        <button @click="loadEditData(statue.id)">Szerkesztés</button>
-                        <button @click="deleteStatue(statue.id)">Törlés</button>
+                        <button @click="loadEditData(statue.id)" class="btn btn-success">Szerkesztés</button>
+                        <button @click="deleteStatue(statue.id)" class="btn btn-danger">Törlés</button>
                     </td>
                 </tr>
                 <tr>
@@ -31,9 +31,9 @@
                         <input type="number" v-model="statue.price">
                     </td>
                     <td>
-                        <button v-if="newData" @click="newStatue">Menté</button>
-                        <button v-if="!newData" @click="saveEditedData">Mentés</button>
-                        <button @click="clearForm">Mégse</button>
+                        <button v-if="newData" @click="newStatue" class="btn btn-light">Mentés</button>
+                        <button v-if="!newData" @click="saveEditedData" class="btn btn-light">Mentés</button>
+                        <button @click="clearForm" class="btn btn-dark">Mégse</button>
                     </td>
                 </tr>
             </tbody>
