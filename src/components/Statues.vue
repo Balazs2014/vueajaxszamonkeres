@@ -32,7 +32,7 @@
                 </td>
                 <td>
                     <button @click="newStatue">Mentés</button>
-                    <button>Mégse</button>
+                    <button @click="clearForm">Mégse</button>
                 </td>
             </tr>
         </tbody>
