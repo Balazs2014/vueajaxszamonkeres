@@ -31,7 +31,7 @@
                         <input type="number" v-model="statue.price">
                     </td>
                     <td>
-                        <button v-if="newData" @click="newStatue">Mentésasd</button>
+                        <button v-if="newData" @click="newStatue">Menté</button>
                         <button v-if="!newData" @click="saveEditedData">Mentés</button>
                         <button @click="clearForm">Mégse</button>
                     </td>
